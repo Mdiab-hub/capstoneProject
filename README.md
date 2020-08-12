@@ -10,7 +10,7 @@
 
 ## Wireframe
 
-![wireframe](file:///Users/pscbus_108/Desktop/ScreenShots/ScreenShot-08-12at12.56.09AM.png)
+![wireframe](Users/pscbus_108/Desktop/ScreenShots/ScreenShot-08-12at12.56.09AM.png)
 
 ## Functional components
 
