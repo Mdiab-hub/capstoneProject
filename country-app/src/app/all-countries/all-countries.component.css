@@ -1,8 +1,17 @@
-body {
+a {
+    text-decoration: none;
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body{
     font-family: 'Lato';
 }
 
-h2, h3, h4, p{
+h2, h3, h4, p {
     font-family: 'Lato';
     margin: 10px;
 }
@@ -27,7 +36,7 @@ h4 {
 }
 
 .country-unit {
-    width: 200px;
+    width 200px;
     display: inline-block;
     margin: 10px;
 }
@@ -36,17 +45,17 @@ br {
     clear: both;
 }
 
-.country-block {
+.country-block{
     padding: 30px 0;
     text-align: center;
     color: white;
     height: 150px;
-    background-color: #795548;
+    background-color: #4CAF50;
     border-radius: 2px;
 }
 
 .country-block:hover {
-    background-color: #9C27B0;
+    background-color: #FF5722;
     cursor: pointer;
     color: white;
 }

@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Three Most Populated Countires</h2>
     <div class="group">
-        <a *ngFor="let country of populatedCountries" class="country-unit" routerLink="/detail/{{country.name}}">
+        <a *ngFor="let country of populatedCountries" class="country-unit" >
             <div class="country-block">
                 <h4>{{country.name}}</h4>
                 <p>{{country.population | number}}</p>
@@ -12,7 +12,7 @@
     <br>
     <h2>Three Largest Countries (Area)</h2>
     <div class="group">
-        <a *ngFor="let country of largestCountries" class="country-unit" routerLink="/detail/{{country.name}}">
+        <a *ngFor="let country of largestCountries" class="country-unit" >
             <div class="country-block">
                 <h4>{{country.name}}</h4>
                 <p>{{country.area | number}} km
@@ -24,7 +24,7 @@
     <br>
     <h2>Countries with Highest GDP</h2>
     <div class="group">
-        <a *ngFor="let country of gdpCountries" class="country-unit" routerLink="/detail/{{country.name}}">
+        <a *ngFor="let country of gdpCountries" class="country-unit" >
             <div class="country-block">
                 <h4>{{"country-block"}}</h4>
                 <p>{{country.gdp | number}} USD</p>
