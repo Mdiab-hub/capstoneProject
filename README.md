@@ -12,33 +12,40 @@
 ## Wireframe / Functional components
 
 ### Country.ts
-     Defined parameters to how defined object properties
+- Defined parameters to how defined object properties
+
  ### Country.service.ts
-     This will contain the different functions that will manipulate the data inside country-data.ts file
+- This will contain the different functions that will manipulate the data inside country-data.ts file
+
  ### Country-data.ts
-     Imports country.ts
-     Holds array of object for each country
+- Imports country.ts
+- Holds array of object for each country
+
  ### App.component.html
-     Linked home component and all countries component
+- Linked home component and all countries component
+
  ### App-routing.module.ts
-     Contains all routing paths for home component, all-country component, *CountryDetail component
+- Contains all routing paths for home component, all-country component, 
+
+- CountryDetail component
 
  ### HomeComponent 
-     * Contains three methods that returns country object, grabs countries with largest gap, area, highest population, and then returns the name of the country
+ 
+ - Contains three methods that returns country object, grabs countries with largest gap, area, highest population, and then returns the name of the country
 
 ![](./img/HomeComponent.png)
 
 
  ### Allcountries component
-     * In html has ngfor directive to loop through the country array that we grabbed from 
-     * Has injectable country service
-     * Ngonit has this.getcountries which grabs the method we created in country service
-     * Get countries method 
+- In html has ngfor directive to loop through the country array that we grabbed from 
+- Has injectable country service
+- Ngonit has this.getcountries which grabs the method we created in country service
+- Get countries method 
 
    ![](./img/AllCountriesComponent.png)
 
  ### Country detail component
-     * Shows details of country one at a time
+- Shows details of country one at a time
 
 ![](./img/CountryDetailComponent.png)
 
