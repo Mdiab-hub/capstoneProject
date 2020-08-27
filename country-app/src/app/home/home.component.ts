@@ -9,7 +9,7 @@ import { Country } from '../country';
 })
 export class HomeComponent implements OnInit {
   populatedCountries: Country[] = [];
-  largetCountires: Country[] = []; //calls country array from countryService component
+  largestCountries: Country[] = []; //calls country array from countryService component
   gdpCountries: Country[] = [];
 
   constructor(private countryService: CountryService) { }
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   setLargestCountries(): void {
-    this.largetCountires = this.countryService.getLargestCountries();
+    this.largestCountries = this.countryService.getLargestCountries();
   }
 
   setGDPCountries(): void {

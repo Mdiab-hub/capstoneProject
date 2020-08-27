@@ -5,7 +5,7 @@ import { COUNTRIES } from './country-data';
  
 @Injectable()
 export class CountryService {
-    countryUrl: ''
+    countryUrl: '';
  
   constructor() { }
  
@@ -14,7 +14,7 @@ export class CountryService {
   }
  
   getPopulatedCountries(): Country[] {
-    return COUNTRIES.sort((a, b) => b.population - a.population).slice(0, 3);
+    return COUNTRIES.sort((a, b) => b.population - a.population).slice(0, 3);//sorts countries (in what order) subtracts the biggest from smallest pull the first three
   }
  
   getLargestCountries(): Country[] {
@@ -26,6 +26,6 @@ export class CountryService {
   }
  
   getCountry(name: string): Country {
-    return COUNTRIES.find(country => country.name === name);
+    return COUNTRIES.find(country => country.name === name);//.find returns the first element of array
   }
 }
