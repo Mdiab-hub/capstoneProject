@@ -12,14 +12,14 @@
 ## Wireframe / Functional components
 
 ### Country.ts
-- Defined parameters to how defined object properties
+- Defines Country class 
 
  ### Country.service.ts
-- This will contain the different functions that will manipulate the data inside country-data.ts file
+- This will contain the different functions that will manipulate the data inside country-data.ts file to get population, gdp, and area
 
  ### Country-data.ts
 - Imports country.ts
-- Holds array of object for each country
+- Holds array called Country
 
  ### App.component.html
 - Linked home component and all countries component
@@ -42,7 +42,7 @@
 - Ngonit has this.getcountries which grabs the method we created in country service
 - Get countries method 
 
-   ![](./img/AllCountriesComponent.png)
+   ![](./img/AllCountriesComponent2.png)
 
  ### Country detail component
 - Shows details of country one at a time
