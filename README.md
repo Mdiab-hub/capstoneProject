@@ -47,7 +47,7 @@
 
 
 
-![](./img/AllCountriesComponent2.png)
+![](./img/AllCountriesComponent3.png)
 
  ### Country detail component
 - Shows details of country one at a time whenever user clicks on the name of any country listed inside either the HomeComponent or AllCountriesComponent
