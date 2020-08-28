@@ -37,15 +37,23 @@
 
 
  ### Allcountries component
-- In html has ngfor directive to loop through the country array that we grabbed from 
-- Has injectable country service
-- Ngonit has this.getcountries which grabs the method we created in country service
-- Get countries method 
+- Imported Country and CountryService classes
+- Created a countries property that accepts an array of Country objects as its value
+- The CountryService class is added to the component using dependency injection
+- ngOnIt calls the getCountries() method of CountryService class upon initialization
+- The getCountries() method relies on getCountries() method from CountryService class, which returns an array of Country objects
+- In html *ngfor lists all countries obtained by the getCountries() method and stored in the countries property of the AllCountriesComponent class
+- This component displays capitals of each country using the capital property.
 
-   ![](./img/AllCountriesComponent2.png)
+
+
+![](./img/AllCountriesComponent2.png)
 
  ### Country detail component
-- Shows details of country one at a time
+- Shows details of country one at a time whenever user clicks on the name of any country listed inside either the HomeComponent or AllCountriesComponent
+- Imported ActivatedRoute and Location
+- ActivatedRoute 
+- Location is used to allow this application to interact with the browser's url
 
 ![](./img/CountryDetailComponent.png)
 

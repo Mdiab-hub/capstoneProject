@@ -1,11 +1,7 @@
 import { Country } from './country';
  
 export const COUNTRIES: Country[] = [
-  //North America
-  //Europe
-  //South America
-  //Africa
-  //Asia
+
   {
     name: 'Russia',
     capital: 'Moscow',
