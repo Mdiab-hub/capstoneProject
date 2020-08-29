@@ -25,9 +25,7 @@
 - Linked home component and all countries component
 
  ### App-routing.module.ts
-- Contains all routing paths for home component, all-country component, 
-
-- CountryDetail component
+- Contains all routing paths for home component, all-country component, countryDetail component
 
  ### HomeComponent 
  
@@ -52,8 +50,12 @@
  ### Country detail component
 - Shows details of country one at a time whenever user clicks on the name of any country listed inside either the HomeComponent or AllCountriesComponent
 - Imported ActivatedRoute and Location
-- ActivatedRoute 
+- ActivatedRoute accesses information about route associated with a component
 - Location is used to allow this application to interact with the browser's url
+- getCountry() method extracts the name parameter from the route snapshot and uses the value to find a country with the given name inside the COUNTRIES array.
+- goBack() method takes the user back to the previous page with the help of the back method from the Location class.
+- In the html file *ngIf is rendered only if country has been set to a value.
+- Binded the click event of our Go Back button to the goBack() method of our component so that wheneverusers click on a button, they are taken back to the previous page.
 
 ![](./img/CountryDetailComponent.png)
 
