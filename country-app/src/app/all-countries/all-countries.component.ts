@@ -18,6 +18,9 @@ export class AllCountriesComponent implements OnInit {
     }
  
     getCountries(): void {
-        this.countries = this.countryService.getCountries();
+        this.countryService.getCountries().subscribe(data => { 
+            this.countries = data
+            
+        });
     }
 }

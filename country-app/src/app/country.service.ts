@@ -1,31 +1,12 @@
 import { Injectable } from '@angular/core';
- 
+import { HttpClient } from "@angular/common/http";
 import { Country } from './country';
-import { COUNTRIES } from './country-data';
- 
+import { Observable } from 'rxjs';
 @Injectable()
 export class CountryService {
-    countryUrl: '';
- 
-  constructor() { }
- 
-  getCountries(): Country[] {
-    return COUNTRIES;
-  }
- 
-  getPopulatedCountries(): Country[] {
-    return COUNTRIES.sort((a, b) => b.population - a.population).slice(0, 3);//sorts countries (in what order) subtracts the biggest from smallest pull the first three
-  }
- 
-  getLargestCountries(): Country[] {
-    return COUNTRIES.sort((a, b) => b.area - a.area).slice(0, 3);
-  }
- 
-  getGDPCountries(): Country[] {
-    return COUNTRIES.sort((a, b) => b.gdp - a.gdp).slice(0, 3);
-  }
- 
-  getCountry(name: string): Country {
-    return COUNTRIES.find(country => country.name === name);//.find returns the first element of array
+  private countryUrl = 'http://localhost:8080/countries'
+  constructor(private http: HttpClient) { }
+  getCountries(): Observable <Country[]> {
+    return this.http.get<Country[]>(this.countryUrl);
   }
 }
